@@ -58,4 +58,4 @@ When entering a number (say, the count of jokes you want) and you type something
 Once you enter the program and press '?' you can never quit!
 
 [IMPROVEMENT]
-Adding the ability to localize the strings on the screen for multiple regions and dialects.
+Adding the ability to localize the strings on the screen for multiple regions and dialects.  Did some more refactoring as well.
