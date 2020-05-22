@@ -47,3 +47,15 @@ ConsolePrinter is next :)  I just deleted the file
 A simple regex search and replace made Program.cs a whole lot easier to read (CTRL-H)
 Find: printer.Value(.*)\.ToString\(\);
 Replace: Console.WriteLine$1;
+
+[BUG]
+In Program.cs, if the user enters 'n' (or No) when asked "Want to use a random name? y/n" then the program doesn't load any names
+
+[BUG]
+When entering a number (say, the count of jokes you want) and you type something that Int.Parse can't handle the user will see a stack trace barf all over their screen.
+
+[BUG]
+Once you enter the program and press '?' you can never quit!
+
+[IMPROVEMENT]
+Adding the ability to localize the strings on the screen for multiple regions and dialects.

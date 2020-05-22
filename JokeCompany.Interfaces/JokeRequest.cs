@@ -2,6 +2,9 @@
 
 namespace JokeCompany
 {
+    /// <summary>
+    /// Immutable data structure to represent the request for one or more Joke(s);
+    /// </summary>
     [Serializable]
     public sealed class JokeRequest
     {

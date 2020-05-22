@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <StartupObject>ConsoleApp1.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\en-CA.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LocalizationCultureCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JokeCompany.Interfaces\JokeCompany.Interfaces.csproj" />
+    <ProjectReference Include="..\JokeCompany.Utilities.Http\JokeCompany.Utilities.Http.csproj" />
+    <ProjectReference Include="..\JokeGenerator.ChuckNorrisProviders\JokeGenerator.ChuckNorrisProviders.csproj" />
+    <ProjectReference Include="..\JokeGenerator.PrivServProvider\JokeGenerator.PrivServProvider.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\en-CA.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="mkdir $(OutDir)\Resources\&#xD;&#xA;copy $(ProjectDir)\Resources\*.json $(OutDir)\Resources\" />
+  </Target>
+
+</Project>
