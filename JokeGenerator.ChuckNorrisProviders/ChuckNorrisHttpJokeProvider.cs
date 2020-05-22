@@ -15,11 +15,11 @@ namespace JokeGenerator.ChuckNorrisProvider
 
         private string BuildQueryString(JokeRequest jokeRequest, JokeCompany.Utilities.Http.HttpClient client)
         {
-            if(string.IsNullOrEmpty(jokeRequest.FirstName)) //We can use LastName only
+            if(string.IsNullOrEmpty(jokeRequest.FirstName) && !string.IsNullOrEmpty(jokeRequest.LastName)) //We can use LastName only
             {
                 client.AppendToQuery("name", jokeRequest.LastName);
             }
-            else if(string.IsNullOrEmpty(jokeRequest.LastName)) //We can use FirstName only
+            else if(string.IsNullOrEmpty(jokeRequest.LastName) && !string.IsNullOrEmpty(jokeRequest.FirstName)) //We can use FirstName only
             {
                 client.AppendToQuery("name", jokeRequest.FirstName);
             }

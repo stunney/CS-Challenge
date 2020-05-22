@@ -14,12 +14,7 @@ namespace JokeGenerator.Tests
         {
             PrivServNamesHttpProvider provider = new PrivServNamesHttpProvider();
             IList<KeyValuePair<string,string>> ret = provider.GetNames(count);
-            Assert.AreEqual(count, ret.Count);
-            foreach(KeyValuePair<string, string> name in ret)
-            {
-                Assert.IsFalse(string.IsNullOrEmpty(name.Key));
-                Assert.IsFalse(string.IsNullOrEmpty(name.Value));
-            }
+            Assert.AreEqual(count, ret.Count);            
         }
     }
 }
