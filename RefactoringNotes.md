@@ -26,3 +26,11 @@ Using the "money" category along with a name replacement in the API returns an i
 
 [Status Update]
 ChuckNorris* classes defined and unit tested.
+
+[REFACTORING]
+Moving on to the Names portion of the JsonFeed class.  Another provider being created.
+
+privserv.com seems to provide a bulk function for getting names.  I'll look into this.
+https://names.privserv.com/api/?amount=25 (min 1, max 500 according to the docs)
+Other switches such as gender and region are available, max length of the name, etc.
+

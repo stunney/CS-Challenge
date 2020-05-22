@@ -41,12 +41,12 @@ namespace JokeGenerator.ChuckNorrisProvider
             var client = new ChuckNorrisHttpClient(new Uri(URL));
             string qs = BuildQueryString(jokeRequest, client);
 
-            var response = client.GetStringAsync(new Uri($"/jokes/random{qs}", UriKind.Relative)).Result;
-
             List<string> jokes = new List<string>(jokeRequest.JokeCount); //Set that capacity like a boss
 
-            for(int i = 0; i < jokeRequest.JokeCount; i++)
+            for (int i = 0; i < jokeRequest.JokeCount; i++)
             {
+                var response = client.GetStringAsync(new Uri($"/jokes/random{qs}", UriKind.Relative)).Result;
+                
                 var joke = JsonConvert.DeserializeObject<ChuckNorrisHttpResponseJoke>(response).value;
                 jokes.Add(joke);
             }

@@ -12,9 +12,8 @@ namespace JokeGenerator.Tests
         //Notes:  "money" returns a 404.  What is THAT all about?!
 
         [DataTestMethod]
-        [DataRow(1, DisplayName = "SingleJoke")]
-        [DataRow(3, DisplayName = "ThreeJokes")]
-        [DataRow(50, DisplayName ="FiftyJokes")]
+        [DataRow(1, DisplayName = "SingleJoke")]        
+        [DataRow(9, DisplayName ="NineJokes")]
         public void GetRenamedFirstNameOnlyJokesTest(int count)
         {
             var jokeProvider = new ChuckNorrisHttpJokeProvider();
@@ -24,9 +23,8 @@ namespace JokeGenerator.Tests
         }
 
         [DataTestMethod]
-        [DataRow(1, DisplayName = "SingleJoke")]
-        [DataRow(3, DisplayName = "ThreeJokes")]
-        [DataRow(50, DisplayName = "FiftyJokes")]
+        [DataRow(1, DisplayName = "SingleJoke")]        
+        [DataRow(9, DisplayName = "NineJokes")]
         public void GetRenamedLastNameOnlyJokesTest(int count)
         {
             var jokeProvider = new ChuckNorrisHttpJokeProvider();
@@ -36,9 +34,8 @@ namespace JokeGenerator.Tests
         }
 
         [DataTestMethod]
-        [DataRow(1, DisplayName = "SingleJoke")]
-        [DataRow(3, DisplayName = "ThreeJokes")]
-        [DataRow(50, DisplayName = "FiftyJokes")]
+        [DataRow(1, DisplayName = "SingleJoke")]        
+        [DataRow(9, DisplayName = "NineJokes")]
         public void GetRenamedBothNamesJokesTest(int count)
         {
             var jokeProvider = new ChuckNorrisHttpJokeProvider();
@@ -48,9 +45,8 @@ namespace JokeGenerator.Tests
         }
 
         [DataTestMethod]
-        [DataRow(1, DisplayName = "SingleJoke")]
-        [DataRow(3, DisplayName = "ThreeJokes")]
-        [DataRow(50, DisplayName = "FiftyJokes")]
+        [DataRow(1, DisplayName = "SingleJoke")]        
+        [DataRow(9, DisplayName = "NineJokes")]
         public void GetNoNameJustCategoryJokesTest(int count)
         {
             var jokeProvider = new ChuckNorrisHttpJokeProvider();
@@ -61,9 +57,8 @@ namespace JokeGenerator.Tests
 
 
         [DataTestMethod]
-        [DataRow(1, DisplayName = "SingleJoke")]
-        [DataRow(3, DisplayName = "ThreeJokes")]
-        [DataRow(50, DisplayName = "FiftyJokes")]
+        [DataRow(1, DisplayName = "SingleJoke")]        
+        [DataRow(9, DisplayName = "NineJokes")]
         public void GetAnyJokesTest(int count)
         {
             var jokeProvider = new ChuckNorrisHttpJokeProvider();

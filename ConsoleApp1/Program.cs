@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
+using JokeGenerator;
+using JokeGenerator.ChuckNorrisProvider;
 
 namespace ConsoleApp1
 {
     class Program
     {
-        static string[] results = new string[50];
+        static IList<string> results = new string[50];
         static char key;
         static Tuple<string, string> names;
         static ConsolePrinter printer = new ConsolePrinter();
@@ -109,21 +106,22 @@ namespace ConsoleApp1
 
         private static void GetRandomJokes(string category, int number)
         {
-            new JsonFeed("https://api.chucknorris.io", number);
-            results = JsonFeed.GetRandomJokes(names?.Item1, names?.Item2, category);
+            JokeRequest jr = new JokeRequest(names?.Item1, names?.Item2, category, number);
+            IJokeProvider jp = new ChuckNorrisHttpJokeProvider();            
+            results = jp.GetJokes(jr);
         }
 
         private static void getCategories()
         {
-            new JsonFeed("https://api.chucknorris.io", 0);
-            results = JsonFeed.GetCategories();
+            //new JsonFeed("https://api.chucknorris.io", 0);
+            //results = JsonFeed.GetCategories();
         }
 
         private static void GetNames()
         {
-            new JsonFeed("https://names.privserv.com/api/", 0);
-            dynamic result = JsonFeed.Getnames();
-            names = Tuple.Create(result.name.ToString(), result.surname.ToString());
+            //new JsonFeed("https://names.privserv.com/api/", 0);
+            //dynamic result = JsonFeed.Getnames();
+            //names = Tuple.Create(result.name.ToString(), result.surname.ToString());
         }
     }
 }
