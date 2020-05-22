@@ -38,4 +38,12 @@ PrivServ provider coded up for names and tests added.
 
 JsonFeed class is now largely useless.  Time to bring in a factory pattern for providing interfaces to a controller.
 
+[REFACTORING]
+The Cambrian Explosion just occured.  A lot of new fossils to maintain but they are all very small and shared interfaces are now being used so that proper factory patterns and dependency injection can be used going forwad.
 
+[REFACTORING]
+ConsolePrinter is next :)  I just deleted the file
+
+A simple regex search and replace made Program.cs a whole lot easier to read (CTRL-H)
+Find: printer.Value(.*)\.ToString\(\);
+Replace: Console.WriteLine$1;

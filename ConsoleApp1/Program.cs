@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using JokeCompany;
-using JokeGenerator;
 using JokeGenerator.ChuckNorrisProvider;
 
 namespace ConsoleApp1
@@ -11,17 +10,16 @@ namespace ConsoleApp1
         static IList<string> results = new string[50];
         static char key;
         static Tuple<string, string> names;
-        static ConsolePrinter printer = new ConsolePrinter();
-
+        
         static void Main(string[] args)
         {
-            printer.Value("Press ? to get instructions.").ToString();
+            Console.WriteLine("Press ? to get instructions.");
             if (Console.ReadLine() == "?")
             {
                 while (true)
                 {
-                    printer.Value("Press c to get categories").ToString();
-                    printer.Value("Press r to get random jokes").ToString();
+                    Console.WriteLine("Press c to get categories");
+                    Console.WriteLine("Press r to get random jokes");
                     GetEnteredKey(Console.ReadKey());
                     if (key == 'c')
                     {
@@ -30,22 +28,22 @@ namespace ConsoleApp1
                     }
                     if (key == 'r')
                     {
-                        printer.Value("Want to use a random name? y/n").ToString();
+                        Console.WriteLine("Want to use a random name? y/n");
                         GetEnteredKey(Console.ReadKey());
                         if (key == 'y')
                             GetNames();
-                        printer.Value("Want to specify a category? y/n").ToString();
+                        Console.WriteLine("Want to specify a category? y/n");
                         if (key == 'y')
                         {
-                            printer.Value("How many jokes do you want? (1-9)").ToString();
+                            Console.WriteLine("How many jokes do you want? (1-9)");
                             int n = Int32.Parse(Console.ReadLine());
-                            printer.Value("Enter a category;").ToString();
+                            Console.WriteLine("Enter a category;");
                             GetRandomJokes(Console.ReadLine(), n);
                             PrintResults();
                         }
                         else
                         {
-                            printer.Value("How many jokes do you want? (1-9)").ToString();
+                            Console.WriteLine("How many jokes do you want? (1-9)");
                             int n = Int32.Parse(Console.ReadLine());
                             GetRandomJokes(null, n);
                             PrintResults();
@@ -59,7 +57,7 @@ namespace ConsoleApp1
 
         private static void PrintResults()
         {
-            printer.Value("[" + string.Join(",", results) + "]").ToString();
+            Console.WriteLine("[" + string.Join(",", results) + "]");
         }
 
         private static void GetEnteredKey(ConsoleKeyInfo consoleKeyInfo)
