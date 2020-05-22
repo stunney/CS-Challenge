@@ -4,6 +4,12 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <ApplicationIcon />
+
+    <OutputType>Library</OutputType>
+
+    <StartupObject />
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,8 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleApp1\JokeGenerator.csproj" />
-    <ProjectReference Include="..\JokeCompany.Interfaces\JokeCompany.Interfaces.csproj" />
+    <ProjectReference Include="..\JokeCompany.Utilities.Http\JokeCompany.Utilities.Http.csproj" />
   </ItemGroup>
 
 </Project>

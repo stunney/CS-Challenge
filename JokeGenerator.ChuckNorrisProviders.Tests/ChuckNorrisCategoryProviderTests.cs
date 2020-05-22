@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using JokeGenerator.ChuckNorrisProvider;
+using JokeCompany;
 
 namespace JokeGenerator.Tests
 {

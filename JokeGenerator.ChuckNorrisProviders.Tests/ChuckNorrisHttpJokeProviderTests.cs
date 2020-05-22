@@ -1,4 +1,5 @@
-﻿using JokeGenerator.ChuckNorrisProvider;
+﻿using JokeCompany;
+using JokeGenerator.ChuckNorrisProvider;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 

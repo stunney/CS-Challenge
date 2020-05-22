@@ -13,6 +13,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokeGenerator.Tests", "JokeGenerator.Tests\JokeGenerator.Tests.csproj", "{5549E7A2-979C-464F-9BDB-90A264DD60E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokeGenerator.ChuckNorrisProviders", "JokeGenerator.ChuckNorrisProviders\JokeGenerator.ChuckNorrisProviders.csproj", "{A6344764-6B13-4A48-B31B-2E6528E8FEA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokeCompany.Utilities.Http.Tests", "JokeCompany.Utilities.Tests\JokeCompany.Utilities.Http.Tests.csproj", "{4C063EFD-4DCE-4E63-96D1-696E0B278053}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokeCompany.Utilities.Http", "JokeCompany.Utilities.Http\JokeCompany.Utilities.Http.csproj", "{EF5A0C0A-943D-44E6-8D33-9EFC8F1A400E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokeGenerator.ChuckNorrisProviders.Tests", "JokeGenerator.ChuckNorrisProviders.Tests\JokeGenerator.ChuckNorrisProviders.Tests.csproj", "{287B86D4-3155-41A8-887A-ACBD7507C3F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokeGenerator.PrivServProvider", "JokeGenerator.PrivServProvider\JokeGenerator.PrivServProvider.csproj", "{281399C4-50B8-45EE-B817-7F35C164B55D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokeCompany.Interfaces", "JokeCompany.Interfaces\JokeCompany.Interfaces.csproj", "{344194C7-110E-4662-879D-CD0ECBAE9AC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +39,30 @@ Global
 		{5549E7A2-979C-464F-9BDB-90A264DD60E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5549E7A2-979C-464F-9BDB-90A264DD60E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5549E7A2-979C-464F-9BDB-90A264DD60E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6344764-6B13-4A48-B31B-2E6528E8FEA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6344764-6B13-4A48-B31B-2E6528E8FEA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6344764-6B13-4A48-B31B-2E6528E8FEA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6344764-6B13-4A48-B31B-2E6528E8FEA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C063EFD-4DCE-4E63-96D1-696E0B278053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C063EFD-4DCE-4E63-96D1-696E0B278053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C063EFD-4DCE-4E63-96D1-696E0B278053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C063EFD-4DCE-4E63-96D1-696E0B278053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF5A0C0A-943D-44E6-8D33-9EFC8F1A400E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF5A0C0A-943D-44E6-8D33-9EFC8F1A400E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF5A0C0A-943D-44E6-8D33-9EFC8F1A400E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF5A0C0A-943D-44E6-8D33-9EFC8F1A400E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{287B86D4-3155-41A8-887A-ACBD7507C3F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{287B86D4-3155-41A8-887A-ACBD7507C3F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{287B86D4-3155-41A8-887A-ACBD7507C3F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{287B86D4-3155-41A8-887A-ACBD7507C3F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{281399C4-50B8-45EE-B817-7F35C164B55D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{281399C4-50B8-45EE-B817-7F35C164B55D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{281399C4-50B8-45EE-B817-7F35C164B55D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{281399C4-50B8-45EE-B817-7F35C164B55D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{344194C7-110E-4662-879D-CD0ECBAE9AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{344194C7-110E-4662-879D-CD0ECBAE9AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{344194C7-110E-4662-879D-CD0ECBAE9AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{344194C7-110E-4662-879D-CD0ECBAE9AC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,7 +2,7 @@
 
 namespace JokeGenerator.ChuckNorrisProvider
 {
-    public class ChuckNorrisHttpClient : Utilities.HttpClient
+    public class ChuckNorrisHttpClient : JokeCompany.Utilities.Http.HttpClient
     {
         public ChuckNorrisHttpClient(Uri absoluteBaseURI) : base()
         {

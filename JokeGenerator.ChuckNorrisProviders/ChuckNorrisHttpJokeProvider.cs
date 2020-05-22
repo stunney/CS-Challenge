@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using JokeGenerator.Utilities;
 using Newtonsoft.Json;
+using JokeCompany;
 
 namespace JokeGenerator.ChuckNorrisProvider
 {
@@ -13,7 +13,7 @@ namespace JokeGenerator.ChuckNorrisProvider
         {            
         }
 
-        private string BuildQueryString(JokeRequest jokeRequest, HttpClient client)
+        private string BuildQueryString(JokeRequest jokeRequest, JokeCompany.Utilities.Http.HttpClient client)
         {
             if(string.IsNullOrEmpty(jokeRequest.FirstName)) //We can use LastName only
             {

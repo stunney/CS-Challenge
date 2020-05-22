@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace JokeGenerator
+namespace JokeCompany
 {
     public interface IJokeProvider
     {

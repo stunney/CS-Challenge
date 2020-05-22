@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using JokeCompany;
 using JokeGenerator;
 using JokeGenerator.ChuckNorrisProvider;
 using JokeGenerator.PrivServProvider;

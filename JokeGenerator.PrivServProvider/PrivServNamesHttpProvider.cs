@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-using JokeGenerator.Utilities;
+using JokeCompany;
+using JokeCompany.Utilities.Http;
 
 namespace JokeGenerator.PrivServProvider
 {

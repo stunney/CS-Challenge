@@ -34,3 +34,8 @@ privserv.com seems to provide a bulk function for getting names.  I'll look into
 https://names.privserv.com/api/?amount=25 (min 1, max 500 according to the docs)
 Other switches such as gender and region are available, max length of the name, etc.
 
+PrivServ provider coded up for names and tests added.
+
+JsonFeed class is now largely useless.  Time to bring in a factory pattern for providing interfaces to a controller.
+
+

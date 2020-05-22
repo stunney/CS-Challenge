@@ -1,9 +1,9 @@
 ﻿using System;
 
-namespace JokeGenerator.Utilities
+namespace JokeCompany.Utilities.Http
 {
     public class HttpClient : System.Net.Http.HttpClient
-    {        
+    {
         private UriBuilder m_uriBuilder = new UriBuilder();
 
         public HttpClient() : base() { }

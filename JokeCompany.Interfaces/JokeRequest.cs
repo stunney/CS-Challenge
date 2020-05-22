@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace JokeGenerator
+namespace JokeCompany
 {
     [Serializable]
     public sealed class JokeRequest
